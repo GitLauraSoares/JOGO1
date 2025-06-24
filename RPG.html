@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dispositivo de Acesso</title>
+</head>
+<body>
+  <div class="painel" id="painelSenha" aria-live="polite">
+    <h1>INSIRA A SENHA</h1>
+
+    <div class="tentativa" id="tentativaAtual" aria-label="Tentativa atual"></div>
+
+    <div class="botoes" role="group" aria-label="Seleção de cores">
+      <button class="cor-btn azul" onclick="adicionarCor('azul')" aria-label="Azul"></button>
+      <button class="cor-btn vermelho" onclick="adicionarCor('vermelho')" aria-label="Vermelho"></button>
+      <button class="cor-btn amarelo" onclick="adicionarCor('amarelo')" aria-label="Amarelo"></button>
+      <button class="cor-btn verde" onclick="adicionarCor('verde')" aria-label="Verde"></button>
+    </div>
+
+    <div id="resultado" role="alert" aria-live="assertive"></div>
+  </div>
+</body>
+</html>
